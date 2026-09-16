@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Offline Demo</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Offline Demo</h1>
+
+        <p>
+            Capacitor APK with local storage.
+        </p>
+
+        <input 
+            id="nameInput" 
+            type="text" 
+            placeholder="Enter your name"
+        >
+
+        <div class="buttons">
+
+            <button onclick="saveUser()">
+                Save
+            </button>
+
+            <button onclick="showUser()">
+                Load
+            </button>
+
+            <button onclick="clearUser()">
+                Clear
+            </button>
+
+        </div>
+
+        <p id="output"></p>
+
+    </div>
+
+
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
+
+</body>
+</html>
+  
